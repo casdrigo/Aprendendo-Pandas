@@ -23,3 +23,8 @@ series_idades
 df = pd.DataFrame()
 df["idades"] = series_idades
 df["nomes"] = series_nomes
+df
+
+# %%
+
+df.iloc[0]
