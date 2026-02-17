@@ -12,6 +12,10 @@ df.to_csv('../data/exercicio/dump_barragem_telix1.csv') #salvando 1 modificaçã
 
 # %%
 
-df_sem_duplicatas = pd.DataFrame(df).drop_duplicates(keep=False)
-
+df[df.duplicated()]
+# %%
+df_sem_duplicatas = df.drop_duplicates()
 df_sem_duplicatas
+#%%
+df_sem_duplicatas.to_csv('../data/exercicio/dump_barragem_telix2-semDuplicatas.csv')
+# %%
