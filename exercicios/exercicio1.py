@@ -29,3 +29,8 @@ df_limpo = df_sem_duplicatas.dropna(subset=['leitura_mm'])
 df_limpo
 # %%
 df_limpo.to_csv('../data/exercicio/dump_barragem_telix3-limpoSemLeiturasNulas.csv')
+
+#%%
+
+df_limpo = pd.read_csv('../data/exercicio/dump_barragem_telix3-limpoSemLeiturasNulas.csv')
+df_limpo
