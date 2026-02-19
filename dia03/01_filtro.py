@@ -49,4 +49,4 @@ df[filtro]
 
 #%%
 filtro = (df["QtdePontos"] == 1 ) | (df["QtdePontos"] == 100)
-df[filtro]
+df[filtro] 
